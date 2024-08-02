@@ -5,7 +5,7 @@ import { AiOutlineUser, AiOutlineSearch, AiOutlineHeart } from 'react-icons/ai';
 const Header = () => {
   return (
       <nav className="bg-[#FBEBB5] w-full">
-        <div className=" container p-4 flex items-center justify-between mx-auto p-4">
+        <div className=" container flex  justify-between mx-auto p-4">
           <button
             data-collapse-toggle="navbar-cta"
             type="button"
@@ -20,7 +20,7 @@ const Header = () => {
           </button>
 
           {/* Navigation Links */}
-          <div className="hidden w-full md:flex md:w-auto" id="navbar-cta">
+          <div className="hidden w-full md:flex md:w-auto p-6 " id="navbar-cta">
             <ul className="flex flex-col font-medium p-4 md:p-0 md:flex-row md:space-x-8">
               <li>
                 <Link to="/" className="block py-2 px-3 md:p-0 text-blue-500" aria-current="page">Home</Link>

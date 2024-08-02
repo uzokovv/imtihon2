@@ -52,7 +52,7 @@
 
 .kreslo {
     height: 90vh;
-    background-color: antiquewhite;
+    /* background-color: antiquewhite; */
 }
 
 .tugma-3 {
@@ -68,3 +68,10 @@
 .card-2 {
     height: 60vh;
 }
+
+.hero__box{
+    margin-top: 13rem;
+}
+/* .hero__box2{
+    margin-top: 30rem;
+} */
