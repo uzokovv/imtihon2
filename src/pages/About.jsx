@@ -2,7 +2,7 @@ import React from "react";
 import Divan from "../assets/img/kotta devan.png";
 import Kreslo from "../assets/img/image.png"
 import svg from "../assets/Rocket single seater 1 (1).svg"
-import {  } from "module";
+import Image from "../assets/xx.png"
 
 const About = () => {
   return (
@@ -22,9 +22,9 @@ const About = () => {
         </div>
       </div>
       <div className=" bg-red-100">
-        <div className="container flex  justify-between p-8 card-2">
-          <div className="container hero__box flex flex-col p-5">
-            <img src={Divan} className="w-56 " alt="" />
+        <div className="container flex  justify-between p-8 card-2 mt-10">
+          <div className="container hero__box flex flex-col p-5 mt-10">
+            <img src={Image} className="w-56 " alt="" />
             <div className="text">
               <h1 className="text-5xl mb-6">Side Table</h1>
               <>
