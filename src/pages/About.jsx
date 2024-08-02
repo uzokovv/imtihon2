@@ -3,6 +3,7 @@ import Divan from "../assets/img/kotta devan.png";
 import Kreslo from "../assets/img/image.png"
 import svg from "../assets/Rocket single seater 1 (1).svg"
 import Image from "../assets/xx.png"
+import { Link } from "react-router-dom";
 
 const About = () => {
   return (
@@ -13,10 +14,9 @@ const About = () => {
             <h1 className="text-[40px] mb-6 " >
               Rocket single <br /> seater
             </h1>
-            <>
-              {" "}
+            <Link to={"/shop"}>
               <button className="button-class tugma text-base">Shop Now</button>
-            </>
+            </Link>
           </div>
           <img src={svg} alt="" />
         </div>
