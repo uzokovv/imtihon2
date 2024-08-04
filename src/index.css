@@ -51,7 +51,7 @@
 }
 
 .kreslo {
-    height: 90vh;
+    height: 50vh;
     /* background-color: antiquewhite; */
 }
 
@@ -69,9 +69,17 @@
     height: 60vh;
 }
 
-.hero__box{
+.hero__box {
     margin-top: 13rem;
 }
+
 /* .hero__box2{
     margin-top: 30rem;
 } */
+
+.background {
+    /* background-image: url('path-to-your-image.jpg'); */
+    background-color: #d3d3d3;
+    background-size: cover;
+    background-position: center;
+}

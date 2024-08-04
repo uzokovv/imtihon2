@@ -1,111 +1,174 @@
-import React from 'react'
-import Devan from '../assets/img/groupdevan.jpg'
-import QoraStol from '../assets/img/photo_2024-08-02_17-57-13.jpg'
-import Stol from "../assets/img/photo_2024-08-02_17-58-27.jpg";
-import Stol1 from "../assets/img/photo_2024-08-02_17-58-31.jpg";
-import Stol2 from "../assets/img/photo_2024-08-02_17-58-34.jpg";
-import Kottadevan from "../assets/img/kotta devan.png";
-import kichik from "../assets/img/image.png"
+import React from "react";
+import Divan from "../assets/img/divan.png";
+import svg from "../assets/Rocket single seater 1 (1).svg"
+import Image from "../assets/img/kreslo.png"
+import kichik from "../assets/img/table1.png"
+import karavot2 from "../assets/img/kravat.png"
+import stoll from "../assets/img/stol.png"
+import stall from "../assets/img/stal.png"
+import page1 from "../assets/img/page1.png";
+import page2 from "../assets/img/page2.png";
+import page3 from "../assets/img/page3.png";
 
-const Home = () => {
+const About = () => {
+  const posts = [
+    {
+      title: 'Going all-in with millennial design',
+      date: '12th Oct 2022',
+      readTime: '5 min',
+      image: page1,
+    },
+    {
+      title: 'Going all-in with millennial design',
+      date: '12th Oct 2022',
+      readTime: '5 min',
+      image: page2,
+    },
+    {
+      title: 'Going all-in with millennial design',
+      date: '12th Oct 2022',
+      readTime: '5 min',
+      image: page3,
+    },
+  ];
+
   return (
-    <div className='container'>
-      <div class="container mx-auto mt-10 p-5">
-        <div class="flex flex-col lg:flex-row bg-white shadow-lg rounded-lg overflow-hidden">
-          <div class="lg:w-1/2 p-5">
-            <div class="flex  justify-between ">
-              <div class="flex space-x-2 flex-col w-[20%] items-center gap-3">
-                <img src={Devan} alt="Asgaard sofa" class="w-16 h-16" />
-                <img src={QoraStol} alt="Asgaard sofa" class="w-16 h-16" />
-                <img src={Stol} alt="Asgaard sofa" class="w-16 h-16" />
-                <img src={Stol1} alt="Asgaard sofa" class="w-16 h-16" />
-                <img src={Stol2} alt="Asgaard sofa" class="w-16 h-16" />
-              </div>
-              <img src={Devan} alt="Asgaard sofa" class="w-[85%]" />
-
+    <>
+      <div className="Hero bg-[#FBEBB5]">
+        <div className="container flex justify-between ">
+          <div className="text">
+            <h1 className="text-[40px] mb-6 mt-[90%]">
+              Rocket single <br /> seater
+            </h1>
+            <button className="button-class tugma text-base">Shop Now</button>
+          </div>
+          <img src={svg} alt="" />
+        </div>
+      </div>
+      <div className="bg-[#FEE2E2]">
+        <div className="container flex items-center justify-between p-8 card-2 mt-10">
+          <div className="container hero__box text-center flex flex-col p-5 mt-10">
+            <img src={Image} className="mx-auto" alt="" />
+            <div className="text">
+              <h1 className="text-5xl mb-6">Side Table</h1>
+              <button className="button-class tugma text-base">
+                View More
+              </button>
             </div>
           </div>
-          <div class="lg:w-1/2 p-5">
-            <h1 class="text-3xl font-bold">Asgaard sofa</h1>
-            <div class="flex items-center mt-2 mb-4">
-              <span class="text-yellow-500 text-xl">★★★★★</span>
-              <span class="text-gray-600 ml-2">(5 Customer Reviews)</span>
-            </div>
-            <div class="text-3xl text-gray-900 mb-4">Rs. 250,000.00</div>
-            <p class="text-gray-700 mb-4">Setting the bar as one of the loudest speakers in its class, the Kilburn is a compact, stout-hearted hero with a well-balanced audio which boasts a clear midrange and extended highs for a sound.</p>
-            <div class="mb-4">
-              <span class="mr-2">Size:</span>
-              <button class="bg-gray-200 text-gray-700 px-2 py-1 rounded">L</button>
-              <button class="bg-gray-200 text-gray-700 px-2 py-1 rounded">XL</button>
-              <button class="bg-gray-200 text-gray-700 px-2 py-1 rounded">XS</button>
-            </div>
-            <div class="mb-4">
-              <span class="mr-2">Color:</span>
-              <button class="w-6 h-6 bg-purple-700 rounded-full"></button>
-              <button class="w-6 h-6 bg-yellow-500 rounded-full"></button>
-              <button class="w-6 h-6 bg-gray-700 rounded-full"></button>
-            </div>
-            <div class="flex items-center mb-4">
-              <button class="bg-gray-200 text-gray-700 px-3 py-1 rounded mr-2">-</button>
-              <span class="text-gray-700 mx-2">1</span>
-              <button class="bg-gray-200 text-gray-700 px-3 py-1 rounded ml-2">+</button>
-            </div>
-            <button class="bg-black text-white px-5 py-2 rounded">Add To Cart</button>
-            <div class="mt-4 text-gray-600">
-              <p>SKU: SS001</p>
-              <p>Category: Sofas</p>
-              <p>Tags: Sofa, Chair, Home, Shop</p>
-            </div>
-            <div class="mt-4 flex space-x-3">
-              <a href="#" class="text-gray-600"><i class="fab fa-facebook"></i></a>
-              <a href="#" class="text-gray-600"><i class="fab fa-twitter"></i></a>
-              <a href="#" class="text-gray-600"><i class="fab fa-linkedin"></i></a>
-              <a href="#" class="text-gray-600"><i class="fab fa-instagram"></i></a>
+          <div className="container hero__box flex flex-col text-center">
+            <img src={karavot2} className="mx-auto" alt="" />
+            <div className="text">
+              <h1 className="text-5xl mb-6">Side Table</h1>
+              <button className="button-class tugma text-base">
+                View More
+              </button>
             </div>
           </div>
         </div>
-        <div className='w-[75%] mx-auto'>
-          <div className='text-center justify-center text-3xl flex gap-10 w-full mt-10'>
-            <h1>Description</h1>
-            <h2>Related Products</h2>
-            <h1>Riwis</h1>
-          </div>
-          <p className='my-3'>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ea qui officia modi, iure quidem voluptatem optio saepe iusto explicabo debitis esse fugit enim eveniet culpa eum quisquam ab? Quam, fuga.</p>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae quae, natus cupiditate vitae esse corrupti doloribus laboriosam asperiores temporibus magnam expedita ea aliquid deleniti quas eos velit ipsa. Fugiat, saepe! Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, dicta!</p>
-          <div className='flex justify-around mt-9'>
-            <img src={Kottadevan} alt="" />
-            <img src={Kottadevan} alt="" />
-          </div>
-
-          <div className='text-3xl text-center mt-10'>
-            <h1>Reaolat Product</h1>
-            <div class="grid grid-cols-4 gap-4 text-center text-[20px] mt-10">
-              <div className='text-center'>
-                <img src={kichik} className='mx-auto'  />
-                <p>Lorem ipsum dolor sit amet.</p>
-                <p>narx 1500</p>
-              </div>
-              <div>
-                <img src={kichik} className='mx-auto' />
-                <p>Lorem ipsum dolor sit amet.</p>
-                <p>narx 1500</p>
-              </div>
-              <div>
-                <img src={kichik} className='mx-auto' />
-                <p>Lorem ipsum dolor sit amet.</p>
-                <p>narx 1500</p>
-              </div>
-              <div>
-                <img src={kichik} className='mx-auto' />
-                <p>Lorem ipsum dolor sit amet.</p>
-                <p>narx 1500</p>
-              </div>
-            </div>
+        <div className="hero kreslo">
+          <div className="container flex items-center justify-around">
+            <div className="asgaard-sofa-image"></div>
           </div>
         </div>
       </div>
-    </div>
-  )
-}
+      <div className="mt-8">
+        <h1 className="text-3xl text-center">Lorem ipsum dolor sit.</h1>
+        <p className="text-center">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        </p>
+        <div className="grid grid-cols-4 gap-4 text-center text-[20px] mt-10 mb-6">
+          <div className="text-center">
+            <img src={karavot2} className="mx-auto" />
+            <p>Lorem ipsum dolor sit amet.</p>
+            <p>Rs. 25,000</p>
+          </div>
+          <div>
+            <img src={stoll} className="mx-auto" />
+            <p>Lorem ipsum dolor sit amet.</p>
+            <p>Rs. 25,000</p>
+          </div>
+          <div>
+            <img src={kichik} className="mx-auto" />
+            <p>Lorem ipsum dolor sit amet.</p>
+            <p>Rs. 25,000</p>
+          </div>
+          <div>
+            <img src={stall} className="mx-auto" />
+            <p>Lorem ipsum dolor sit amet.</p>
+            <p>Rs. 25,000</p>
+          </div>
+        </div>
+      </div>
+      <div className="text-center mb-12">
+        <h1 className="text-4xl font-bold mb-4">Our Blogs</h1>
+        <p className="text-gray-600">
+          Find a bright ideal to suit your taste with our great selection
+        </p>
+      </div>
+      <div className="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 px-4">
+        {posts.map((post, index) => (
+          <div key={index} className="bg-white rounded-lg shadow-lg overflow-hidden">
+            <img
+              className="w-full h-48 object-cover"
+              src={post.image}
+              alt={post.title}
+            />
+            <div className="p-6">
+              <h2 className="text-xl font-semibold mb-2">{post.title}</h2>
+              <a href="#" className="text-blue-500 hover:underline">
+                Read More
+              </a>
+              <div className="flex items-center mt-4 text-gray-600 text-sm">
+                <span className="mr-2">
+                  <svg
+                    className="inline-block w-4 h-4"
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                  >
+                  </svg>
+                  {post.readTime}
+                </span>
+                <span>
+                  <svg
+                    className="inline-block w-4 h-4 mr-1"
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                  >
+                  </svg>
+                  {post.date}
+                </span>
+              </div>
+            </div>
+          </div>
+        ))}
+      </div>
+      <div className="text-center mt-8">
+        <a href="#" className="text-blue-500 hover:underline">
+          View All Post
+        </a>
+      </div>
+      <div
+        className="text-center bg-opacity-80 p-10 rounded-lg shadow-lg"
+        style={{
+          backgroundImage: `url()`,
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+        }}
+      >
+        <h1 className="text-4xl font-bold mb-4">Our Instagram</h1>
+        <p className="text-lg mb-6">Follow our store on Instagram</p>
+        <a
+          href="https://www.instagram.com"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="bg-blue-500 text-white py-2 px-6 rounded-full shadow hover:bg-blue-600 transition duration-300"
+        >
+          Follow Us
+        </a>
+      </div>
+    </>
+  );
+};
 
-export default Home
+export default About;
